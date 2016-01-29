@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>A blog about TangGuowei</description>
-    <link>http://tangguowei.github.io//</link>
-    <atom:link href="http://tangguowei.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Jan 2016 00:41:32 +0800</pubDate>
-    <lastBuildDate>Sat, 30 Jan 2016 00:41:32 +0800</lastBuildDate>
+    <link>http://tangguowei.github.io/</link>
+    <atom:link href="http://tangguowei.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 30 Jan 2016 00:43:58 +0800</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 00:43:58 +0800</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;h4 id=&quot;hello-worldhello-world&quot;&gt;就像每个程序都会以hello world开始，我的博客也以这篇作为hello world为起点。&lt;/h4&gt;
 </description>
         <pubDate>Fri, 29 Jan 2016 08:00:00 +0800</pubDate>
-        <link>http://tangguowei.github.io//tom-hello/</link>
-        <guid isPermaLink="true">http://tangguowei.github.io//tom-hello/</guid>
+        <link>http://tangguowei.github.io/tom-hello/</link>
+        <guid isPermaLink="true">http://tangguowei.github.io/tom-hello/</guid>
         
         <category>杂</category>
         
