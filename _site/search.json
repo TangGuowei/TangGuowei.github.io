@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "设计模式笔记-1",
+      "category" : "框架",
+      "tags"     : "设计模式, 架构, and iOS",
+      "url"      : "/Objective-C-designPattern1/",
+      "date"     : "19 Mar 2016"
+    } ,
+  
+    {
       "title"    : "终于开始了",
       "category" : "无关痛痒",
       "tags"     : "杂",
