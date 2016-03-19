@@ -12,7 +12,9 @@ categories:
 - 框架
 twitter_text: 'Put your twitter description here.'
 ---
+
 ## 简单工厂模式
+
 ---
 
 ###1. 由来场景:
@@ -32,44 +34,41 @@ twitter_text: 'Put your twitter description here.'
 
 ###3. 伪代码:
 
-```objective-c
+    //抽象产品
+    @interface Product:NSObject
+        - (void)use;
+    @end
 
-//抽象产品
-@interface Product:NSObject
-- (void)use;
-@end
+    //具体产品
+    @interface ProductA:Product
+        - (void)use;
+    @end
 
-//具体产品
-@interface ProductA:Product
-- (void)use;
-@end
+    @interface ProductA:Product
+        - (void)use;
+    @end
 
-@interface ProductA:Product
-- (void)use;
-@end
+    //工厂
+    @implementation Factory
+    + (Product *)productWithType:(Type)type
+    {
+        if(type == ProductA){
+            return [ProductA new];
+        }else if(type == ProductB){
+            return = [ProductB new];
+        }else{
+        }
+    }
+    @end
 
-//工厂
-@implementation Factory
-+ (Product *)productWithType:(Type)type
-{
-if(type == ProductA){
-return [ProductA new];
-}else if(type == ProductB){
-return = [ProductB new];
-}else{
-...
-}
-}
-@end
+    客户端
 
-客户端
+    - (void)configProduct
+    {
+        Product *product = [Factory productWithType:ProductA];
+        [product use];
+    }
 
-- (void)configProduct
-{
-Product *product = [Factory productWithType:ProductA];
-[product use];
-}
-```
 
 ###4. 模式优点:
 - 将构造产品的业务逻辑分离给单独的工厂类管理，客户端只需要使用产品，不需要负责创建

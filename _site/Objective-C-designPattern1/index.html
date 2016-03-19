@@ -112,6 +112,7 @@
 
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 <h2 id="section">简单工厂模式</h2>
+
 <hr />
 
 <h3 id="section-1">1. 由来场景:</h3>
@@ -131,46 +132,41 @@
 
 <h3 id="section-3">3. 伪代码:</h3>
 
-<p>```objective-c</p>
-
-<p>//抽象产品
+<pre><code>//抽象产品
 @interface Product:NSObject
-- (void)use;
-@end</p>
+    - (void)use;
+@end
 
-<p>//具体产品
+//具体产品
 @interface ProductA:Product
-- (void)use;
-@end</p>
+    - (void)use;
+@end
 
-<p>@interface ProductA:Product
-- (void)use;
-@end</p>
+@interface ProductA:Product
+    - (void)use;
+@end
 
-<p>//工厂
+//工厂
 @implementation Factory
 + (Product *)productWithType:(Type)type
 {
-if(type == ProductA){
-return [ProductA new];
-}else if(type == ProductB){
-return = [ProductB new];
-}else{
-…
+    if(type == ProductA){
+        return [ProductA new];
+    }else if(type == ProductB){
+        return = [ProductB new];
+    }else{
+    }
 }
-}
-@end</p>
+@end
 
-<p>客户端</p>
+客户端
 
-<ul>
-  <li>(void)configProduct
+- (void)configProduct
 {
-Product *product = [Factory productWithType:ProductA];
-[product use];
+    Product *product = [Factory productWithType:ProductA];
+    [product use];
 }
-```</li>
-</ul>
+</code></pre>
 
 <h3 id="section-4">4. 模式优点:</h3>
 <ul>
